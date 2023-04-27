@@ -1,0 +1,35 @@
+{
+  "name": "superchat",
+  "version": "1.0.0",
+  "description": "superchat",
+  "main": "app.ts",
+  "scripts": {
+    "start": "nodemon src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisDiamond/superchat.git"
+  },
+  "keywords": [
+    "superchat"
+  ],
+  "author": "node-g3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThisDiamond/superchat/issues"
+  },
+  "homepage": "https://github.com/ThisDiamond/superchat#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.2",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.1"
+  }
+}
