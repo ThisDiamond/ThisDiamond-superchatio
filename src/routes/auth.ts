@@ -4,10 +4,11 @@ const routes = Router()
 
 routes.get('/register', )
 routes.get('/login', )
+routes.get('/forget', )
 
-routes.post('/regiQster', )
-routes.post('/login', )
-routes.post('/forget', )
+routes.post('/postRegister', )
+routes.post('/postLogin', )
+routes.post('/postForget', )
 
 
 export default routes
