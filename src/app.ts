@@ -1,6 +1,7 @@
 import express, { Express } from "express";
 import cors from "cors";
 import { engine } from "express-handlebars";
+import index from './routes/index'
 
 const server: Express = express();
 
@@ -12,6 +13,8 @@ server.use(express.static('public'))
 server.engine("hbs", engine({ extname: ".hbs" }));
 server.set("view engine", "hbs");
 server.set("views", "./views");
+
+server.use(index)
 
 server.get("/", (req, res) => {
     res.render('index')
