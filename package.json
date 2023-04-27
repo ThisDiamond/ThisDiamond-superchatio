@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ThisDiamond/superchat#readme",
   "dependencies": {
+    "@prisma/client": "^4.13.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.2",
