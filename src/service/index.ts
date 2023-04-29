@@ -12,6 +12,22 @@ export type UserDto = {
     user_type: string
 }
 
+export type chatDto = {
+    user_one: string,
+    user_two: string,
+    date: Date,
+    status: string
+}
+
+export type MessageDto = {
+        user_id: number,
+        chat_id:number,
+        message: string,
+        date: Date,
+        status: string
+}
+
+
 export async function findUserByEmail(email: string) {
     return prisma.users.findUnique({
         where: {
@@ -43,14 +59,6 @@ export async function deleteUser(id: number) {
     })
 }
 
-export type chatDto = {
-    user_one: string,
-    user_two: string,
-    date: Date,
-    status: string
-}
-
-
 export async function findChatById(id: number) {
     return prisma.chat.findUnique({
         where: {
@@ -76,14 +84,6 @@ export async function deleteChat(id: number) {
             id
         }
     })
-}
-
-export type MessageDto = {
-        user_id: number,
-        chat_id:number,
-        message: string,
-        date: Date,
-        status: string
 }
 
 
