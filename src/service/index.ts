@@ -20,11 +20,11 @@ export type chatDto = {
 }
 
 export type MessageDto = {
-    user_id: number,
-    chat_id: number,
-    message: string,
-    date: Date,
-    status: string
+        user_id: number,
+        chat_id:number,
+        message: string,
+        date: Date,
+        status: string
 }
 
 
@@ -39,13 +39,13 @@ export async function findUserByEmail(email: string) {
 export async function createUser(user: UserDto) {
     return prisma.users.create({
         data: {
-            firstname: user.firstname,
-            lastname: user.lastname,
-            age: user.age,
-            email: user.email,
-            password: user.password,
-            status: user.status,
-            user_type: user.user_type
+                firstname: user.firstname,
+                lastname: user.lastname,
+                age: user.age,
+                email: user.email,
+                password: user.password,
+                status: user.status,
+                user_type: user.user_type
         }
     })
 }
